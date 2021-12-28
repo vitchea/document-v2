@@ -1,0 +1,1 @@
+<img src="{{asset('storage/images/TRCLogo.png')}}" alt="trc-logo" class="w-12 h-12">
