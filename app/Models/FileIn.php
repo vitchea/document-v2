@@ -17,5 +17,5 @@ class FileIn extends Model
         'fileid',
         'file'
     ]; 
-
+    
 }

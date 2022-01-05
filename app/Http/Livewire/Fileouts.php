@@ -89,6 +89,7 @@ class Fileouts extends Component
             'filesource' => $this->filesource,
             'subject' => $this->subject,
             'fileid' => $this->fileid,
+            'file' => 'Null',
         ];
 
         if(!empty($this->file)){

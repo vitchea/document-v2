@@ -16,8 +16,8 @@ class CreateFileInsTable extends Migration
         Schema::create('file_ins', function (Blueprint $table) {
             $table->id();
             $table->date('date');
-            $table->string('filesource');
-            $table->string('subject');
+            $table->longText('filesource');
+            $table->longText('subject');
             $table->string('fileid');
             $table->string('file');
             $table->timestamps();

@@ -16,8 +16,8 @@ class CreateFileoutsTable extends Migration
         Schema::create('fileouts', function (Blueprint $table) {
             $table->id();
             $table->date('date');
-            $table->string('filesource');
-            $table->string('subject');
+            $table->longText('filesource');
+            $table->longText('subject');
             $table->string('fileid');
             $table->string('file');
             $table->timestamps();

@@ -40,20 +40,11 @@
                                 id="exampleFormControlInput1" wire:model="fileid">
                             @error('fileid') <span class="text-red-500">{{ $message }}</span>@enderror
                         </div>
-                        {{-- <div class="mb-4">
-                            <label for="exampleFormControlInput2"
-                                class="block text-gray-700 text-sm font-bold mb-2">FileName</label>
-                            <textarea
-                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                id="exampleFormControlInput2" wire:model="filename"
-                                placeholder="Enter FileName"></textarea>
-                            @error('filename') <span class="text-red-500">{{ $message }}</span>@enderror
-                        </div> --}}
                         <div class="mb-4">
-                            <label for="exampleFormControlInput2"
+                            <label for="exampleFormControlInput1"
                                 class="block text-gray-700 text-sm font-bold mb-2">File</label>
-                             <input type="file" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" wire:model="file" >
-                               
+                             <input type="file" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
+                             id="exampleFormControlInput1" wire:model="file" >                 
                             @error('file') <span class="text-red-500">{{ $message }}</span>@enderror
                         </div>                        
                     

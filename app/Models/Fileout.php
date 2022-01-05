@@ -18,4 +18,5 @@ class Fileout extends Model
         'fileid',
         'file'
     ]; 
+   
 }

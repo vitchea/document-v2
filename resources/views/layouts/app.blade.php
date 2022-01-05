@@ -9,7 +9,8 @@
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
-
+        <link rel="icon" type="image/ico" href="storage/images/favicon128.ico"  />
+        
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
@@ -47,5 +48,6 @@
                 $('#form-upload')[0].reset();
             });
         </script>
+        
     </body>
 </html>

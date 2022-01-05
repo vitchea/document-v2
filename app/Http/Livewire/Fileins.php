@@ -20,7 +20,9 @@ class Fileins extends Component
    // public $fileins;
     public $date,$filesource,$subject,$file,$fileid,$file_id;
     public $isModalOpen=0;
-    public $search;
+    public $search,$validateData;
+    
+   
    
 
     public function render()
@@ -80,6 +82,7 @@ class Fileins extends Component
             'filesource' => 'required',
             'subject' => 'required',
             'fileid' => 'required',
+            
         ];
 
         $data = [
@@ -87,6 +90,7 @@ class Fileins extends Component
             'filesource' => $this->filesource,
             'subject' => $this->subject,
             'fileid' => $this->fileid,
+            'file' => 'Null',
         ];
 
         if(!empty($this->file)){
@@ -130,6 +134,7 @@ class Fileins extends Component
 
         $this->closeModalPopover();
         $this->resetCreateForm();
+        
     }
 
     public function edit($id)
